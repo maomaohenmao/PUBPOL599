@@ -38,16 +38,16 @@ def factors2(x):
        print('invalid number')
        
 #%% 
-def factors2(x):
-   factorsList2=[]
+def factors2s(x):
+   factorsList2s=[]
    if x != 0:
        for i in range(-abs(x)-1,0):
            if x % i == 0:
-               factorsList2.append(i)
+               factorsList2s.append(i)
        for i in range(1, abs(x)+1):
            if x % i == 0:
-               factorsList2.append(i)
-       return factorsList2
+               factorsList2s.append(i)
+       return factorsList2s
    elif x == 0:
        print('All other numbers are the facters of 0')
     
@@ -64,7 +64,7 @@ def factors3(x):
 
     
  #%%
- def factors4(x):
+def factors4(x):
    factorsList4=[]
    if x==None:
        print ('missing values as input')
