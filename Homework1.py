@@ -34,7 +34,7 @@ guyages=students['ages']
 for value in guyages:
     if (value >= 10) and (value <=80):
         print ('good value')
-    else:
+    else: 
         print('bad value',value)
         
 #%%
@@ -46,11 +46,41 @@ for value in guyages:
         print(students[students['ages']==value])
         
 #%%
-def badAgeDetector(adataframe):
-    import pandas as pd
-    wronglist=[]
-    for val in adataframe.ages:
-        if val < 16 | val > 80:
-            wronglist.append(adataframe.names)
-    answerAsDicts={'age':adataframe.ages,'name'adataframe.names:wronglist}
-    return pd.DataFrame(answerAsDicts)
+# The function needs these fields as inputs:
+# DF is the dataframe
+# ageColumnName is the name of the column of ages
+# namesColumName is the name of the column of names
+# lowT and upT are the thresholds
+
+def badAgeDetector(DF,ageColumnName,namesColumName,lowT=10,upT=80):  # Read all the data
+    
+    goodAges=range(lowT,upT+1) # Assume a lower and upper threshold
+    
+    # subset the original DF:keep the rows whose ages are NOT good
+    DFdetected=DF[~DF[ageColumnName].isin(goodAges)] # this style replaces 'for' and 'if'
+    
+    return DFdetected[namesColumName] # return the names: you are returning a pandas "series" (like a list)
+
+badAgeDetector(DF=students,ageColumnName='ages',namesColumName="names")
+#%%
+def badAgeDetector2(DF,ageColumnName,namesColumName,lowT=10,upT=80):
+    goodAges=range(lowT,upT+1)
+    DFdetected=DF[~DF[ageColumnName].isin(goodAges)]
+    return DFdetected[[namesColumName]] # The extra [] create a dataframe
+
+badAgeDetector2(DF=students,ageColumnName='ages',namesColumName="names")
+#%%
+def badAgeDetector3(DF,ageColumnName,namesColumName,lowT=10,upT=80):
+    goodAges=range(lowT,upT+1)
+    DFdetected=DF[~DF[ageColumnName].isin(goodAges)]
+    return DFdetected[[namesColumName,ageColumnName]] # here was the change.
+
+badAgeDetector3(DF=students,ageColumnName='ages',namesColumName="names")
+#%%
+def badAgeDetector4(DF,ageColumnName,namesColumName,lowT=10,upT=80):
+    guyages=DF[ageColumnName]
+    goodAges=list(range(lowT,upT+1))
+    DFdetected=DF[~DF[ageColumnName].isin(goodAges)]
+    return DFdetected
+
+badAgeDetector4(DF=students,ageColumnName='ages',namesColumName="names")
