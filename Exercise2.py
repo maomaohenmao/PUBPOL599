@@ -15,12 +15,20 @@ df.columns = df.iloc[0]
 df = df[1:]
 df.to_csv('my data.csv')
 #%%
+df.dtypes
+#%%
+from pandas.api.types import CategoricalDtype
+df['Category'] = df['Category'].astype(CategoricalDtype(ordered=True))
+#%%
+df['Category'].median()
+#%%
 df['Category'].mode()
 #%%
 toNum=lambda x:pd.to_numeric(x)
 democracy=df.iloc[:,3:8].apply(toNum)
 democracy.dtypes
 #%%
+import matplotlib.pyplot as plt 
 pd.plotting.scatter_matrix(democracy,figsize=(12, 12))
 plt.show()
 #%%
