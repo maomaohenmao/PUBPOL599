@@ -20,7 +20,7 @@ df.dtypes
 from pandas.api.types import CategoricalDtype
 df['Category'] = df['Category'].astype(CategoricalDtype(ordered=True))
 #%%
-df['Category'].median()
+
 #%%
 df['Category'].mode()
 #%%
