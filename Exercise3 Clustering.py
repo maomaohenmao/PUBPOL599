@@ -56,7 +56,7 @@ g = sns.clustermap(data.iloc[:,2:6],
 from sklearn.metrics import silhouette_score
 from numpy import ravel
 
-for nOfClusters in range(2,5):
+for nOfClusters in range(2,6):
     # get cluster labels
     clusterLabels = ravel(cut_tree(dataSimi_link, nOfClusters)) # formatting cut_tree output with ravel
     # get silhouettes
@@ -69,24 +69,24 @@ for nOfClusters in range(2,5):
 import numpy as np
 from sklearn.metrics import silhouette_samples
 
-clusterLabels3=np.ravel(cut_tree(dataSimi_link, 3))
-data['sil3']=silhouette_samples(dataSimi_matrix, clusterLabels3, metric='precomputed')
-
 clusterLabels4=np.ravel(cut_tree(dataSimi_link, 4))
 data['sil4']=silhouette_samples(dataSimi_matrix, clusterLabels4, metric='precomputed')
+
+clusterLabels5=np.ravel(cut_tree(dataSimi_link, 5))
+data['sil5']=silhouette_samples(dataSimi_matrix, clusterLabels5, metric='precomputed')
 #%%
 set(data[data.sil4<0].index)
 #%%
-set(data[data.sil3<0].index)
+set(data[data.sil5<0].index)
 #%%
-set(data[data.sil4<0].index) & set(data[data.sil3<0].index)
+set(data[data.sil4<0].index) & set(data[data.sil5<0].index)
 #%%
-data['k3']=clusterLabels3
+data['k5']=clusterLabels3
 #%%
 import matplotlib.pyplot as plt
 
-myPalette = {0 : 'b',1 : 'orange',2 : 'r'}      
-myColors = [myPalette[l] for l in data.loc[:,'k3']]
+myPalette = {0 : 'b',1 : 'orange',2 : 'r', 3:'g', 4:'black'}      
+myColors = [myPalette[l] for l in data.loc[:,'k5']]
 
 pd.plotting.scatter_matrix(data.iloc[:,2:6],
                            figsize=(16, 16),
