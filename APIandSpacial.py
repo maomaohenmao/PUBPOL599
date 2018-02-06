@@ -95,3 +95,120 @@ compressedMap= 'https://github.com/EvansDataScience/data/raw/master/WAzips.zip'
 import geopandas as gpd
 #%%
 wazipMap = gpd.GeoDataFrame.from_file(compressedMap)
+#%%
+wazipMap.head()
+#%%
+wazipMap.ZCTA5CE10.dtype
+#%%
+WA_zip_contri.contributor_zip.dtype
+#%%
+wazipMap.ZCTA5CE10=wazipMap.ZCTA5CE10.astype(int)
+#%%
+contribWAmap=wazipMap.merge(WA_zip_contri, left_on='ZCTA5CE10', right_on='contributor_zip')
+#%%
+contribWAmap.shape[0]
+#%%
+wazipMap.shape[0]
+#%%
+#install matplotlib
+#pip install descartes
+%matplotlib inline
+base = wazipMap.plot(color='black',figsize=(20,13))
+
+contribWAmap.plot(ax=base, color='pink')
+#%%
+#NOW that you are in maps, make sure column names are not longer than 10 characters
+contribWAmap['contribDen']=contribWAmap.amount/contribWAmap.POP2017
+#%%
+contribWAmap['contribDen'].describe()
+#%%
+#finding the issue:
+import numpy as np
+
+contribWAmap[contribWAmap['contribDen']==np.inf][['contribDen']]
+#%%
+contribWAmap=contribWAmap[contribWAmap['contribDen']!=np.inf]
+#%%
+contribWAmap['contribDen'].describe()
+#%%
+base = wazipMap.plot(color='red',figsize=(20,13))
+
+contribWAmap.plot(ax=base,column='contribDen',cmap='YlGnBu',scheme='Quantiles',k=5,legend=True)
+#%%
+import matplotlib.pyplot as plt
+
+base = wazipMap.plot(color='red',figsize=(20,13))
+
+topLayer=contribWAmap.plot(ax=base,column='contribDen',cmap='YlGnBu',scheme='Quantiles',k=5,legend=True,
+                  legend_kwds={'loc': 3,'title':'Contribution rate: \n (red missing)'})
+topLayer.set_title('Contribution towards candidates in WA since 2012 per zip code', 
+                   color='black',fontdict={'fontsize':30})
+leg = topLayer.get_legend()
+plt.setp(leg.get_title(), multialignment='center')
+plt.show()
+#%%
+cd
+#%%
+contribWAmap.to_file(driver = 'ESRI Shapefile', filename= "contribWAmap.shp")
+#%%
+# LINK
+
+wikiLink = "https://en.wikipedia.org/wiki/Democracy_Index" # Location
+
+# SCRAPING VIA PANDAS
+
+import pandas as pd
+
+wikiTables=pd.read_html(wikiLink,header=0,attrs={'class': 'wikitable sortable',})
+
+# index 0 is the first element!
+demodex=wikiTables[0]
+#%%
+list(demodex.Category.value_counts().index)
+#%%
+from pandas.api.types import CategoricalDtype
+
+goodOrderCat=['Authoritarian','Hybrid regime','Flawed democracy', 'Full democracy']
+demodex.Category=demodex.Category.astype(CategoricalDtype(categories=goodOrderCat, 
+                                         ordered=True))
+#%%
+demodex.dropna(inplace=True)
+#%%
+compressedMap2='https://github.com/EvansDataScience/data/raw/master/worldMap.zip'
+worldMap = gpd.GeoDataFrame.from_file(compressedMap2)
+#%%
+worldMap.head()
+#%%
+worldMap.dtypes
+#%%
+worldMapDem=worldMap.merge(demodex,left_on='NAME', right_on='Country')
+#%%
+# where is the missing countries:
+
+base = worldMap.plot(color='black',figsize=(20,13),edgecolor='black')
+
+worldMapDem.plot(ax=base, color='pink')
+#%%
+base = worldMap.plot(color='black',figsize=(20,13),edgecolor='black')
+
+worldMapDem.plot(ax=base,column='Category',cmap='Set2',categorical=True,legend=True)
+#%%
+list(zip(worldMapDem.Category.cat.codes,worldMapDem.Category))
+#%%
+# I need str(x) because 'x' is a number, and numbers and text can not be concatenated with '+':
+# zip is used to make parallel pairs:
+[str(x)+'.'+y for (x,y) in zip(worldMapDem.Category.cat.codes+1,worldMapDem.Category)]
+#%%
+worldMapDem['Category2']=[str(x)+'.'+y for (x,y) in zip(worldMapDem.Category.cat.codes+1,worldMapDem.Category)]
+#%%
+base = worldMap.plot(color='black',figsize=(20,13),edgecolor='black')
+worldMapDem.plot(ax=base,column='Category2',cmap='Set2',categorical=True,legend=True)
+#%%
+base = worldMap.plot(color='black',figsize=(20,13),edgecolor='black')
+topLayer=worldMapDem.plot(ax=base,column='Category2',cmap='Set2',categorical=True,legend=True,
+                  legend_kwds={'loc': 6,'title':'Democracy Level: \n (black missing)'})
+topLayer.set_title('How democracy is spread around the world (2016)', 
+                   color='black',fontdict={'fontsize':30})
+leg = topLayer.get_legend()
+plt.setp(leg.get_title(), multialignment='center')
+plt.show()
