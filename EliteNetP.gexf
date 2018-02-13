@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="multi" type="long" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>13/02/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Romero" label="Romero">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Grana" label="Grana">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Miro Quesada" label="Miro Quesada">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Moreyra" label="Moreyra">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Fort" label="Fort">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="De La Puente" label="De La Puente">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Wiese" label="Wiese">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Onrubia" label="Onrubia">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Brescia" label="Brescia">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Nicolini" label="Nicolini">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Montero" label="Montero">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Picaso" label="Picaso">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Bentin" label="Bentin">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Benavides" label="Benavides">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Bustamante" label="Bustamante">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Woodman Pollit" label="Woodman Pollit">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Raffo" label="Raffo">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Piazza" label="Piazza">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Berckemeyer" label="Berckemeyer">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Llosa Barber" label="Llosa Barber">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Beoutis Ledesma" label="Beoutis Ledesma">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Rizo Patron" label="Rizo Patron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Montori" label="Montori">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Sotomayor" label="Sotomayor">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Cilloniz" label="Cilloniz">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Ferreyros" label="Ferreyros">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Michell" label="Michell">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Wong Lu" label="Wong Lu">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Batievsky Spack" label="Batievsky Spack">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Matos Escalada" label="Matos Escalada">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Galsky" label="Galsky">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lucioni" label="Lucioni">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Rodriguez Rodriguez" label="Rodriguez Rodriguez">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="Custer" label="Custer">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Ikeda" label="Ikeda">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Cogorno" label="Cogorno">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Arias Davila" label="Arias Davila">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Romero" target="Grana" weight="1" />
+      <edge id="1" source="Romero" target="Miro Quesada" weight="1" />
+      <edge id="2" source="Romero" target="Moreyra" weight="1" />
+      <edge id="3" source="Romero" target="Fort" weight="1" />
+      <edge id="4" source="Romero" target="De La Puente" weight="1" />
+      <edge id="5" source="Romero" target="Onrubia" weight="1" />
+      <edge id="6" source="Romero" target="Brescia" weight="1" />
+      <edge id="7" source="Romero" target="Nicolini" weight="1" />
+      <edge id="8" source="Romero" target="Bentin" weight="1" />
+      <edge id="9" source="Romero" target="Benavides" weight="1" />
+      <edge id="10" source="Romero" target="Bustamante" weight="1" />
+      <edge id="11" source="Romero" target="Woodman Pollit" weight="1" />
+      <edge id="12" source="Romero" target="Raffo" weight="1" />
+      <edge id="13" source="Romero" target="Piazza" weight="1" />
+      <edge id="14" source="Romero" target="Berckemeyer" weight="1" />
+      <edge id="15" source="Romero" target="Llosa Barber" weight="1" />
+      <edge id="16" source="Romero" target="Rizo Patron" weight="1" />
+      <edge id="17" source="Romero" target="Montori" weight="1" />
+      <edge id="18" source="Grana" target="Miro Quesada" weight="1" />
+      <edge id="19" source="Grana" target="Fort" weight="1" />
+      <edge id="20" source="Grana" target="De La Puente" weight="1" />
+      <edge id="21" source="Grana" target="Wiese" weight="1" />
+      <edge id="22" source="Grana" target="Montero" weight="1" />
+      <edge id="23" source="Grana" target="Benavides" weight="1" />
+      <edge id="24" source="Grana" target="Bustamante" weight="1" />
+      <edge id="25" source="Grana" target="Piazza" weight="1" />
+      <edge id="26" source="Grana" target="Beoutis Ledesma" weight="1" />
+      <edge id="27" source="Grana" target="Michell" weight="1" />
+      <edge id="28" source="Miro Quesada" target="Fort" weight="1" />
+      <edge id="29" source="Miro Quesada" target="De La Puente" weight="1" />
+      <edge id="30" source="Miro Quesada" target="Wiese" weight="1" />
+      <edge id="31" source="Miro Quesada" target="Montero" weight="1" />
+      <edge id="32" source="Miro Quesada" target="Benavides" weight="1" />
+      <edge id="33" source="Miro Quesada" target="Bustamante" weight="1" />
+      <edge id="34" source="Miro Quesada" target="Piazza" weight="1" />
+      <edge id="35" source="Miro Quesada" target="Beoutis Ledesma" weight="1" />
+      <edge id="36" source="Miro Quesada" target="Michell" weight="1" />
+      <edge id="37" source="Moreyra" target="Fort" weight="1" />
+      <edge id="38" source="Moreyra" target="De La Puente" weight="1" />
+      <edge id="39" source="Moreyra" target="Wiese" weight="1" />
+      <edge id="40" source="Moreyra" target="Onrubia" weight="1" />
+      <edge id="41" source="Moreyra" target="Brescia" weight="1" />
+      <edge id="42" source="Moreyra" target="Montero" weight="1" />
+      <edge id="43" source="Moreyra" target="Picaso" weight="1" />
+      <edge id="44" source="Moreyra" target="Bentin" weight="1" />
+      <edge id="45" source="Moreyra" target="Bustamante" weight="1" />
+      <edge id="46" source="Moreyra" target="Raffo" weight="1" />
+      <edge id="47" source="Moreyra" target="Berckemeyer" weight="1" />
+      <edge id="48" source="Moreyra" target="Rizo Patron" weight="1" />
+      <edge id="49" source="Moreyra" target="Montori" weight="1" />
+      <edge id="50" source="Moreyra" target="Sotomayor" weight="1" />
+      <edge id="51" source="Fort" target="De La Puente" weight="1" />
+      <edge id="52" source="Fort" target="Onrubia" weight="1" />
+      <edge id="53" source="Fort" target="Brescia" weight="1" />
+      <edge id="54" source="Fort" target="Nicolini" weight="1" />
+      <edge id="55" source="Fort" target="Picaso" weight="1" />
+      <edge id="56" source="Fort" target="Bentin" weight="1" />
+      <edge id="57" source="Fort" target="Benavides" weight="1" />
+      <edge id="58" source="Fort" target="Bustamante" weight="1" />
+      <edge id="59" source="Fort" target="Woodman Pollit" weight="1" />
+      <edge id="60" source="Fort" target="Raffo" weight="1" />
+      <edge id="61" source="Fort" target="Piazza" weight="1" />
+      <edge id="62" source="Fort" target="Llosa Barber" weight="1" />
+      <edge id="63" source="Fort" target="Beoutis Ledesma" weight="1" />
+      <edge id="64" source="Fort" target="Sotomayor" weight="1" />
+      <edge id="65" source="Fort" target="Cilloniz" weight="1" />
+      <edge id="66" source="De La Puente" target="Wiese" weight="1" />
+      <edge id="67" source="De La Puente" target="Montero" weight="1" />
+      <edge id="68" source="De La Puente" target="Benavides" weight="1" />
+      <edge id="69" source="De La Puente" target="Bustamante" weight="1" />
+      <edge id="70" source="De La Puente" target="Piazza" weight="1" />
+      <edge id="71" source="De La Puente" target="Berckemeyer" weight="1" />
+      <edge id="72" source="De La Puente" target="Beoutis Ledesma" weight="1" />
+      <edge id="73" source="De La Puente" target="Rizo Patron" weight="1" />
+      <edge id="74" source="De La Puente" target="Sotomayor" weight="1" />
+      <edge id="75" source="Wiese" target="Montero" weight="1" />
+      <edge id="76" source="Wiese" target="Berckemeyer" weight="1" />
+      <edge id="77" source="Wiese" target="Beoutis Ledesma" weight="1" />
+      <edge id="78" source="Wiese" target="Rizo Patron" weight="1" />
+      <edge id="79" source="Wiese" target="Sotomayor" weight="1" />
+      <edge id="80" source="Onrubia" target="Brescia" weight="1" />
+      <edge id="81" source="Onrubia" target="Nicolini" weight="1" />
+      <edge id="82" source="Onrubia" target="Bentin" weight="1" />
+      <edge id="83" source="Onrubia" target="Woodman Pollit" weight="1" />
+      <edge id="84" source="Onrubia" target="Raffo" weight="1" />
+      <edge id="85" source="Onrubia" target="Berckemeyer" weight="1" />
+      <edge id="86" source="Onrubia" target="Llosa Barber" weight="1" />
+      <edge id="87" source="Onrubia" target="Montori" weight="1" />
+      <edge id="88" source="Brescia" target="Bentin" weight="1" />
+      <edge id="89" source="Brescia" target="Raffo" weight="1" />
+      <edge id="90" source="Brescia" target="Berckemeyer" weight="1" />
+      <edge id="91" source="Brescia" target="Montori" weight="1" />
+      <edge id="92" source="Nicolini" target="Bentin" weight="1" />
+      <edge id="93" source="Nicolini" target="Woodman Pollit" weight="1" />
+      <edge id="94" source="Nicolini" target="Raffo" weight="1" />
+      <edge id="95" source="Nicolini" target="Llosa Barber" weight="1" />
+      <edge id="96" source="Nicolini" target="Rizo Patron" weight="1" />
+      <edge id="97" source="Montero" target="Picaso" weight="1" />
+      <edge id="98" source="Montero" target="Bustamante" weight="1" />
+      <edge id="99" source="Montero" target="Beoutis Ledesma" weight="1" />
+      <edge id="100" source="Montero" target="Ferreyros" weight="1" />
+      <edge id="101" source="Picaso" target="Bustamante" weight="1" />
+      <edge id="102" source="Picaso" target="Sotomayor" weight="1" />
+      <edge id="103" source="Picaso" target="Cilloniz" weight="1" />
+      <edge id="104" source="Bentin" target="Woodman Pollit" weight="1" />
+      <edge id="105" source="Bentin" target="Raffo" weight="1" />
+      <edge id="106" source="Bentin" target="Berckemeyer" weight="1" />
+      <edge id="107" source="Bentin" target="Llosa Barber" weight="1" />
+      <edge id="108" source="Bentin" target="Montori" weight="1" />
+      <edge id="109" source="Bentin" target="Ferreyros" weight="1" />
+      <edge id="110" source="Bentin" target="Wong Lu" weight="1" />
+      <edge id="111" source="Benavides" target="Bustamante" weight="1" />
+      <edge id="112" source="Benavides" target="Piazza" weight="1" />
+      <edge id="113" source="Bustamante" target="Piazza" weight="1" />
+      <edge id="114" source="Bustamante" target="Montori" weight="1" />
+      <edge id="115" source="Bustamante" target="Cilloniz" weight="1" />
+      <edge id="116" source="Bustamante" target="Ferreyros" weight="1" />
+      <edge id="117" source="Woodman Pollit" target="Raffo" weight="1" />
+      <edge id="118" source="Woodman Pollit" target="Berckemeyer" weight="1" />
+      <edge id="119" source="Woodman Pollit" target="Llosa Barber" weight="1" />
+      <edge id="120" source="Raffo" target="Berckemeyer" weight="1" />
+      <edge id="121" source="Raffo" target="Llosa Barber" weight="1" />
+      <edge id="122" source="Raffo" target="Montori" weight="1" />
+      <edge id="123" source="Piazza" target="Llosa Barber" weight="1" />
+      <edge id="124" source="Piazza" target="Beoutis Ledesma" weight="1" />
+      <edge id="125" source="Berckemeyer" target="Llosa Barber" weight="1" />
+      <edge id="126" source="Berckemeyer" target="Rizo Patron" weight="1" />
+      <edge id="127" source="Berckemeyer" target="Montori" weight="1" />
+      <edge id="128" source="Berckemeyer" target="Sotomayor" weight="1" />
+      <edge id="129" source="Llosa Barber" target="Beoutis Ledesma" weight="1" />
+      <edge id="130" source="Rizo Patron" target="Sotomayor" weight="1" />
+      <edge id="131" source="Montori" target="Cilloniz" weight="1" />
+      <edge id="132" source="Sotomayor" target="Cilloniz" weight="1" />
+      <edge id="133" source="Batievsky Spack" target="Matos Escalada" weight="1" />
+      <edge id="134" source="Batievsky Spack" target="Galsky" weight="1" />
+    </edges>
+  </graph>
+</gexf>
