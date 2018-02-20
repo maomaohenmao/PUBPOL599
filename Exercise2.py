@@ -20,13 +20,29 @@ df.dtypes
 from pandas.api.types import CategoricalDtype
 df['Category'] = df['Category'].astype(CategoricalDtype(ordered=True))
 #%%
-
-#%%
 df['Category'].mode()
 #%%
 toNum=lambda x:pd.to_numeric(x)
-democracy=df.iloc[:,3:8].apply(toNum)
+democracy=df.iloc[:,2:8].apply(toNum)
 democracy.dtypes
+#%%
+democracy['country'] = df.Country
+#%%
+print(list(range(democracy.shape[0])))
+#%%
+for i in range(democracy.shape[0]):
+   if democracy.iloc[i,0]<5:
+       print(democracy.iloc[i,0])
+       democracy.iloc[i,0]=0
+#%%
+democracy['new']=democracy.Score
+for i in range(democracy.shape[0]):
+   if democracy.iloc[i,0]<5:
+       print(democracy.iloc[i,0])
+       democracy.loc[i,'new']=0
+   else:
+       democracy.loc[i,'new']=1
+        
 #%%
 import matplotlib.pyplot as plt 
 pd.plotting.scatter_matrix(democracy,figsize=(12, 12))
